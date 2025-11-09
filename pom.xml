@@ -96,6 +96,26 @@
             <artifactId>spring-web</artifactId>
             <version>7.0.0-M9</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>4.0.0-M1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt -->
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.13.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.openidentityplatform.commons/json-web-token -->
+        <dependency>
+            <groupId>org.openidentityplatform.commons</groupId>
+            <artifactId>json-web-token</artifactId>
+            <version>3.0.1</version>
+        </dependency>
 
 	</dependencies>
 

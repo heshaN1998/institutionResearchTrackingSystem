@@ -1,8 +1,7 @@
 package lk.ijse.cmjd.reasearchtracker.project.dto;
-import jakarta.transaction.Status;
+import lk.ijse.cmjd.reasearchtracker.project.entity.Status;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-import lk.ijse.cmjd.reasearchtracker.project.entity.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

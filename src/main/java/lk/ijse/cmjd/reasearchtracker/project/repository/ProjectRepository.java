@@ -6,5 +6,5 @@ import java.util.List;
 
 @Repository
 public interface ProjectRepository extends JpaRepository<Project, String> {
-    List<Project> findByPiId(String piId);
+    List<Project> findByPi_Id(String piId);
 }

@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
-import java.io.ObjectInputFilter;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.io.ObjectInputFilter;
 
 @Entity
 @Table(name = "projects")
@@ -31,11 +31,11 @@ public class Project {
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private ObjectInputFilter.Status status;
+    private Status status;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "pi_id", nullable = false)
-    private User.user PI; // Principal Investigator
+    private User pi; // Principal Investigator
 
     private String tags;
 

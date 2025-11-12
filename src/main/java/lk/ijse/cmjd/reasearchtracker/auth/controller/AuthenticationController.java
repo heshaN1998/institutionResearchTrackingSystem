@@ -1,4 +1,5 @@
 package lk.ijse.cmjd.reasearchtracker.auth.controller;
+
 import jakarta.validation.Valid;
 import lk.ijse.cmjd.reasearchtracker.auth.dto.JwtAuthenticationResponse;
 import lk.ijse.cmjd.reasearchtracker.auth.dto.LoginRequest;
@@ -29,7 +30,6 @@ public class AuthenticationController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
-    //login
     @PostMapping("/login")
     public ResponseEntity<JwtAuthenticationResponse> login(
             @Valid @RequestBody LoginRequest request) {
@@ -39,7 +39,6 @@ public class AuthenticationController {
         return ResponseEntity.ok(response);
     }
 
-    //get current details
     @GetMapping("/me")
     public ResponseEntity<User> getCurrentUser(Authentication authentication) {
         log.debug("Getting current user details");
@@ -57,7 +56,6 @@ public class AuthenticationController {
         return ResponseEntity.ok(response);
     }
 
-    //logout
     @PostMapping("/logout")
     public ResponseEntity<ApiResponse> logout() {
         log.info("Logout request received");
